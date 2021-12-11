@@ -1,0 +1,68 @@
+# **********************************************************************
+# "CPU Panel (8-core)" theme for Conky by Tony George (teejee2008@gmail.com)
+#
+# Webpage: http://teejeetech.blogspot.in/
+# **********************************************************************
+
+
+background yes
+double_buffer yes
+
+alignment top_right
+
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+gap_x 20
+gap_y 40
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_colour 000000
+own_window_argb_visual no
+own_window_argb_value 0
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+minimum_size 350 230
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+
+show_graph_scale no
+show_graph_range no
+
+use_xft yes
+xftalpha 0.1
+xftfont Droid Sans:size=12
+color0 white
+color1 EAEAEA
+color2 FFA300
+color3 grey
+
+TEXT
+${color2}CPU ${color0} ${cpu cpu%}%  ${color3}${cpubar cpu0 10,} 
+${cpugraph cpu% 100,400}${voffset -19}
+${cpugraph cpu0 50,100}${cpugraph cpu1 50,100}${cpugraph cpu2 50,100}${cpugraph cpu3 50,100}${voffset -19}
+${cpugraph cpu4 50,100}${cpugraph cpu5 50,100}${cpugraph cpu6 50,100}${cpugraph cpu7 50,100}${voffset -19}
+${cpugraph cpu8 50,100}${cpugraph cpu9 50,100}${cpugraph cpu10 50,100}${cpugraph cpu11 50,100}${voffset -19}
+${cpugraph cpu12 50,100}${cpugraph cpu13 50,100}${cpugraph cpu14 50,100}${cpugraph cpu15 50,100}
+${font Ubuntu:size=10}${voffset -210}${color3}${goto 10}0 ${goto 110}1 ${goto 210}2 ${goto 0} ${goto 310}3 ${voffset 50}${goto 10}4 ${goto 110}5 ${goto 210}6 ${goto 310}7 ${voffset 50}${goto 10}8 ${goto 110}9 ${goto 210}10 ${goto 0} ${goto 310}11 ${voffset 50}${goto 10}12 ${goto 110}13 ${goto 210}14 ${goto 310}15   
+${font Ubuntu:size=8}${voffset -167}${color3}${goto 58}${freq_g (0)}GHz ${goto 158}${freq_g (1)}GHz ${goto 258}${freq_g (2)}GHz ${goto 0} ${goto 358}${freq_g (3)}GHz 
+${voffset 37}${goto 58}${freq_g (4)}GHz ${goto 158}${freq_g (5)}GHz ${goto 258}${freq_g (6)}GHz ${goto 358}${freq_g (7)}GHz
+${voffset 37}${goto 58}${freq_g (8)}GHz${goto 158}${freq_g (9)}GHz${goto 258}${freq_g (10)}GHz${goto 358}${freq_g (11)}GHz
+${voffset 37}${goto 58}${freq_g (12)}GHz${goto 158}${freq_g (13)}GHz${goto 258}${freq_g (14)}GHz${goto 358}${freq_g (15)}GHz
+${voffset 25}
